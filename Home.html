@@ -1,0 +1,3428 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstarp icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- stylesheet1 -->
+    <link href="style.css" rel="stylesheet" />
+    <link href="resp.css" rel="stylesheet" />
+    <!-- icon! -->
+    <link
+      rel="icon"
+      href="Picture , Color  and Trailer\Icon.png"
+      type="image/x-icon"
+    />
+    <!-- Rye font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <!-- js -->
+    <script type="text/javascript" src="Anm.js"></script>
+    <title>Home-Notflix</title>
+  </head>
+  <body class="co-white" style="background: rgba(20, 20, 20, 1)">
+    <!-- Modal Movie -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog d-flex justify-content-center align-items-center modals"
+        style="margin-top: 20vh"
+      >
+        <div class="modal-content bg-grays">
+          <div class="modal-header border-0 p-0">
+            <img
+              src="https://occ-0-586-1380.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABbFI2wcwiGkHDdGWaw58hWgLETOBsbqqv6GbKnZFn3s_Y4fjw0Ys9DNYD5txnfV3oj9tgsBeaSnPcBOwQqQnpHVqHeQr9FtvVzaL.jpg?r=776"
+              class="d-block w-100"
+              alt="Breaking bad"
+            />
+            <img
+              src="https://occ-0-4566-58.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABS1kQ3bLw61sI8nNQHftRAKuEw-TfNIAjZ2UnZKfwlSWMuc7JVGnvJiFqvkem_5adGMUswsUoJjL0zyIkyIK2QS7Cah82EJv7CKrzZDkapM.webp?r=c0d"
+              class="d-flex w-50 position-relative"
+              style="right: 500px; top: 60px"
+            />
+            <button
+              type="button"
+              class="btn p-0 border-0 position-relative btnR"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              style="bottom: 130px; right: 265px"
+            >
+              <i class="bi bi-x co-white"></i>
+            </button>
+          </div>
+          <div class="modal-body border-0" style="font-family: Notflix light">
+            <span class="d-flex justify-content-between align-items-center"
+              ><a href="Error.html"
+                ><button type="button" class="btn btn-light">
+                  <span style="font-family: Notflix bold"
+                    ><i class="bi bi-play-fill bi-size"></i> Watch
+                  </span>
+                </button></a
+              >
+              <a href="Error.html"
+                ><i class="bi bi-plus-circle card-icon"></i
+              ></a>
+            </span>
+            <h6 class="mt-2">Ozymandias</h6>
+            <p>
+              Walt goes on the run. Jesse is taken hostage. Marie convinces
+              Skyler to tell Walter, Jr. the truth.
+            </p>
+            <div class="card2"></div>
+          </div>
+          <div class="modal-footer border-0"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end-modal -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navst">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand co-red"
+          href="#"
+          style="font-family: rye; cursor: default"
+          >NOTFLIX</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navts"><i class="bi bi-list"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link co-white"
+                aria-current="page"
+                href="Home.html"
+                style="font-family: Notflix light"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item active co-white">
+              <a
+                class="nav-link"
+                href="Form.html"
+                style="font-family: Notflix light"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <div></div>
+          <form class="d-flex search-flex" role="search">
+            <div class="input-group">
+              <input
+                class="form-control search-input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <span class="input-group-text search-btn" id="basic-addon2"
+                ><i class="bi bi-search"></i
+              ></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar-end -->
+    <!-- Big Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img
+            src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABWt1n4VQ-Y8roQQvcIEyZYvWLswjD30kSqatWpzu6t1J_sZpOUfECnFb2AJWRQmZhRgQ6hu-oYqfyfPHzmUktocUohh3qkPFWvam.webp?r=c8b"
+            class="d-block w-100"
+            alt="The flash"
+          />
+          <div class="carousel-caption d-md-block">
+            <h5>
+              <img
+                src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABei9S1CHrJnfOezQxUTxe1tJtne2hWE_sK17GjLalLi0jxdZ-MWoP7bR971IWAqXbhsjyo-MIh3HSm7JSyRYUckWVr-hVqpcdtZZ7BdbfPQF.webp?r=9a6"
+                class=""
+                alt="The flash"
+                style="width: 40vw"
+              />
+            </h5>
+            <p style="font-size: 1.5vw; font-family: Notflix light">
+              Mobster and hit man Jimmy Conlon has one night to figure out where
+              his loyalties lie: with his<br />
+              estranged son, Mike, whose life is in danger, or his longtime best
+              friend, mob boss Shawn<br />
+              Maguire, who wants Mike to pay for the death of his own son.<br />
+            </p>
+            <span
+              ><button type="button" class="btn btn-light btnL">
+                <span style="font-family: Notflix bold"
+                  ><i class="bi bi-play-fill bi-size"></i> Play
+                </span>
+              </button>
+              <button type="button" class="btn btn-secondary btni btnL">
+                <span style="font-family: Notflix bold"
+                  ><i
+                    class="bi bi-info-circle bi-size"
+                    style="margin-right: 3px"
+                  ></i>
+                  More info</span
+                >
+              </button></span
+            >
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABUFUpv_RBi7xN3QRN3gpoc4TJ-Fx2Oi0YxSYuiMppgL7cw7iebf5iurUN2UUYAvh9by5DOlLQ9a_W_C11JFegvJ3qZV7xBEF5PDZ.webp?r=a04"
+            class="d-block w-100"
+            alt="Captains"
+          />
+          <div class="carousel-caption d-md-block">
+            <h5>
+              <img
+                src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABdW4shBztIwy1AJ5cEjEZluL_tuud3h_gzg0JFUAbKAlYqWbfzOaoQWeHMUS9VloLOPNkLY4HnwJk3QXOc_KxO6m4nVWC2N24tLEvSqzR4cqkVWUQ-NOKjNNbHyHfrLCcpH6zEchT4LhPRgRusBcCcCt5j5HtyaiCR53jMddFHLMtQMheG8o4A.webp?r=60c"
+                alt="Inside man"
+                style="width: 40vw"
+              />
+            </h5>
+            <p style="font-size: 1.5vw; font-family: Notflix light">
+              A prisoner on death row in the US and a woman trapped in a
+              cellar<br />
+              under an English vicarage, cross paths in the most unexpected way.
+            </p>
+            <span
+              ><button type="button" class="btn btn-light btnL">
+                <span style="font-family: Notflix bold"
+                  ><i class="bi bi-play-fill bi-size"></i> Play
+                </span>
+              </button>
+              <button type="button" class="btn btn-secondary btni btnL">
+                <span style="font-family: Notflix bold"
+                  ><i
+                    class="bi bi-info-circle bi-size"
+                    style="margin-right: 3px"
+                  ></i>
+                  More info</span
+                >
+              </button></span
+            >
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img
+            src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABU5bAF1gyqRWfqqS66tyoO6WQCkF4zEf-GTuhLN8b0j38aYXp721miyrGgTFB_P-8F7Lm2c6oXGHWAgJs4TP8zFIBQdU8uwzcCsJ.webp?r=7f2"
+            class="d-block w-100"
+            alt="pokemon x y"
+          />
+          <div class="carousel-caption d-md-block">
+            <h5>
+              <img
+                src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABY-dKknX5Ywg2RzkgS5yXamfiMDKbOsigiI89TpPZTbj4l9GgXEW0eCCMaxvQy_k0tqiOUVO5b-KkueGLTIrjBlMtbJeqxBG7WC4WvHW_R5l.webp?r=0b5"
+                alt="the young shaman"
+                style="width: 40vw"
+              />
+            </h5>
+            <p style="font-size: 1.5vw; font-family: Notflix light">
+              An amature shaman born into a family of exorcist uses his<br />
+              expertise to catch ghost in a neighborhood filled with<br />
+              supernatural activty
+            </p>
+            <span
+              ><button type="button" class="btn btn-light btnL">
+                <span style="font-family: Notflix bold"
+                  ><i class="bi bi-play-fill bi-size"></i> Play</span
+                >
+              </button>
+              <button type="button" class="btn btn-secondary btni btnL">
+                <span style="font-family: Notflix bold"
+                  ><i
+                    class="bi bi-info-circle bi-size"
+                    style="margin-right: 3px"
+                  ></i>
+                  More info</span
+                >
+              </button></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bigcarousel-end -->
+    <!-- Breadcrumbs -->
+    <nav
+      style="--bs-breadcrumb-divider: '>'"
+      aria-label="breadcrumb"
+      class="navcrumb bg-grays"
+    >
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a
+            href="Home.html"
+            style="
+              font-family: Notflix light;
+              text-decoration: none;
+              color: white;
+            "
+            >Home</a
+          >
+        </li>
+        <li class="breadcrumb-item active">
+          <a
+            style="
+              font-family: Notflix light;
+              text-decoration: none;
+              color: #fff;
+              cursor: default;
+            "
+            >Tv shows</a
+          >
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb-end -->
+    <!-- Slider 1 -->
+    <div class="slider-box bg-grays">
+      <section class="container-fluid slider1">
+        <div class="d-flex justify-content-between">
+          <p class="text-white" style="font-family: Notflix medium">
+            <b> Top Ten Series </b>
+          </p>
+          <div class="">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div
+            class="carousel-inner"
+            style="position: relative; overflow: visible"
+          >
+            <!-- 1st slide -->
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZi_RqpT84KU9PuLqluo8QNslnXT8Hu2_bME3ez2GFxUqc-CdICtULofUMFIpTV_EO1tghUWNSLzXeqhWzYDdSL2ifiUB0eKrn8.webp?r=01d"
+                    class="card-img-top"
+                    alt="Breaking bad"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <section
+                      class="d-flex justify-content-between align-items-center mt-3"
+                    >
+                      <p
+                        class="netflix-card-text mb-2"
+                        style="color: rgb(0, 186, 0)"
+                      >
+                        100% match
+                      </p>
+                      <span class="netflix-card-text mb-2">Legend Series</span>
+                      <span class="netflix-card-text border mb-2 p-1">4K</span>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbNLtzh5-D4Tv_6aQdDnOEEtyII1Cmwvn47gLkSdPmZOX4cdRaUdftd7m0O0dWjUgV0gyLzAnxtO6O5xtBFh-BiYL03VTveGFvN-ThhmS67Ek7ZWq8UE9k88D9Ub6T9GzkgS.jpg?r=777"
+                    class="card-img-top"
+                    alt="Peaky blinder"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcgaFsq-Dr-4pXvWU8NOI4X7qkynOajhbSSvJaqvpqKVeDN9uSDAZr_yJCgq2Zc7BvV_9scPAjyjU-NVRUdp8k2CbWjYACXrTaDx6CVm6ICdfHlOkQt8Gmx7_KdLIwQIqFCN.jpg?r=5da"
+                    class="card-img-top"
+                    alt="Ozark"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ0WEYJnCl_SRCuvNHj13EDsC0VfBXZ6E9JtqoFaEXuutDuJOuEXQRxbwKTA08gt_HfghUWAcyyGM9DCKqdVVXjUdqUjSMaMY87ICnV8WfA0O5f7tQOvLnye6zm3I-bCnnzq.jpg?r=5c6"
+                    class="card-img-top"
+                    alt="Narcos"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXpc0wVADBvxcEN6JsL2iJbuDWGZ0XeQqMmG2MfLgdaJnu6h82J7HrbaGljVbcEB3u7Hq6f43AVxnhUkuyh-48LwMH1SFMZIpgw.webp?r=425"
+                    class="card-img-top"
+                    alt="Black list"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbzBukwj-wl3qePSdFwS-Nwy6BGO7tIdqQ0oFSWYKqpdhrmIcLeD0CYnBd81oVLyS7eu5sROjfsOCmJmxso3w8xcqDcCdNitNN6nUpm2nLIKIbB7PUAsftFJnfhUpQk0tEi0.jpg?r=8a4"
+                    class="card-img-top"
+                    alt="money heist"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+            <!-- 2st slide -->
+            <div class="carousel-item">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfp3cRX3Z98SpIjjW3dLURs4mf0R41RgLnd1b-xZOqob-JdyNvJ57vdtlyi1MjjreYFe2FwN4nrJxZ2Ibl4xqtCt-Cp5MuE3uM4zmaACaNt62aUJIL8IpQNLlwLdlLu_FTY7.jpg?r=4ef"
+                    class="card-img-top"
+                    alt="house of card"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZIBBR7oynkiPyAuy1yxwbupZ2_C5gGGR-IJXda-q21670ZvLjLJOQ2GBUlFu2md97suJM_WYwGMw8cYXlim_F1OB8obfA4bA0q_LlrXk_gC4FvzBoe237KXybQbX8RGev68.jpg?r=e66"
+                    class="card-img-top"
+                    alt="Top boy"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb_83U1SHfJBy95G5Pwt-lshn1G99_pK9Zn0MLjkh9IunpQ1onmvG6j808Vng-Wxuu_UViT1T1uM-mfFxPjpN34wz2599H41liTIC3xiimfDrEpgLoQUmTXT1D6uAd5ikk1x.jpg?r=2d0"
+                    class="card-img-top"
+                    alt="mind hunter"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRhmEMBjtSWIWuDRXtrcQ4sD0p7EYT9Wy6PryS06-KYA71lmOHETJmPEh3bRZAado4aTONL6BHPUdVhZ4QDHmOraPdIQjl3LmgqCRfrpHakBQm0Ez4mGAFyo6jtWvA-UYOdp.jpg?r=a86"
+                    class="card-img-top"
+                    alt="bodyguard"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRKaWnYVUYAughfl0_zwZMHTJVyBARxT-D8ZhT8PEzUs_MiC2O_vzTXyxRvlyucBzJVPFpfppy2vlclLB1JEfKoNKo3IZSvTo95Rnm-C3ApKXYqL1LFwUkCqVKgE1Rn5DY_y.jpg?r=c4c"
+                    class="card-img-top"
+                    alt="Boredertown"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABanbYzhyAAMvKGK4kcU_wK1IkG39TM8mWHoUpDLQR2ahan3kwK1vB9Y_2qBvYaVB9axpGfq7ESb3vbLRocwT6WmHsd2GqVQq6vxKj2qbHccSdI47qKFJqMiGpm-1ue70wPOh.jpg?r=3ed"
+                    class="card-img-top"
+                    alt="Sacred games"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- slider1-end -->
+    <!-- Slider 2 -->
+    <div class="slider-box bg-grays">
+      <section class="container-fluid slider1">
+        <div class="d-flex justify-content-between">
+          <p class="text-white" style="font-family: Notflix medium">
+            <b> Comedy Show </b>
+          </p>
+          <div class="">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators2"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        </div>
+        <div
+          id="carouselExampleIndicators2"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div
+            class="carousel-inner"
+            style="position: relative; overflow: visible"
+          >
+            <!-- 1st slide -->
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ5iQYiWCrofaqMOuW8I7KntyAWMuJ9RY44A8uAWIIAC_hMFjicjxOIIiKgYHL3CUrX09twAc7E2K3xCdkFEwCv7ZVUmKBrCpvY.webp?r=ab5"
+                    class="card-img-top"
+                    alt="Breaking bad"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • ok • Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTD5ifjXNHmE_1bPrQaNbSrBZ4agkeCsQvz_UAAm_AiHv1bAfhVDEiE5Om2_7InTVGImifWCct1azW-CBdYlV4kUAE67-8lae5H0O8tWz1UKihGGJxAv07GZyJdjQSEdtCMR.jpg?r=6c0"
+                    class="card-img-top"
+                    alt="Peaky blinder"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdcm_UvwwylZXENTU9WgaXXDONDNN5DuQBLiJ0o4GhDjIpQn9zEYneHgqRvJBJYhQb0WkDFit2b3Y1CLRO4rcTQAZM_GxvyHjk0.webp?r=0cd"
+                    class="card-img-top"
+                    alt="Ozark"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQ15coY4svUsJ-WUpHlbkYSTq-OnwwELql3xyK5y3ebk-SEU1pHbvUuLNix7iWUbZhef3Q3DBX9DDfnDJui--SExsmN6N8q-VtU.webp?r=0e9"
+                    class="card-img-top"
+                    alt="Narcos"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYHwKrJFEti6lshFvVebQHto945V03o5x2e8Nf-AqXHXxr_gYCdmKjA5DkgRVy2HougGUs4QS0tGtlvyzo0kckVS51YL9-u1j7c.webp?r=bdf"
+                    class="card-img-top"
+                    alt="Black list"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaEFz55a1YG3AdtBssKyhdYm_4FrzxS-_RI0nZXaWvYlUv98RmfK3W95sjZ8rnAiywMTtjKVQA-n8lws6FJQohe41LQAVnOHM2ycFYmy-nFJT4CqdJI5y5WUbdO9yLJxhZ2P.jpg?r=bca"
+                    class="card-img-top"
+                    alt="money heist"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+            <!-- 2st slide -->
+            <div class="carousel-item">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWdwUFsYDhryftVXMxwcLwkWG9E6i67XNiVuq3kPuyQvwDhZYCvCA_lryonnbaZ_PXpBcqpZ3tUYtTE1UKKSOkmQ39sfbSCzxR8.webp?r=190"
+                    class="card-img-top"
+                    alt="house of card"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • ok • Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdFYuAzPeFpOzVVMRwoZOAk1qWDhF-DUt_lg9s-ZQTmn_Cw2mbgED2KdgQRVop--dF3vEBAYQKZaC2VrCtNJrA5xA6XboF4JrVwnxG93WbifR9-00-C_21G_PLy7BbmlvyP5.jpg?r=146"
+                    class="card-img-top"
+                    alt="Top boy"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYWvuQ0zTjXUurn_M4j2KAXGEg2uAelU2JjrtXf9d3C8bb3Cad9j7nQi0QEsH17sR6RfxNxNNyU2-94g8gkGvSGwrK751yRuOOm8vfQZc2Gtpzm_mFVM4e09kHR2O5OfOoB7.jpg?r=aad"
+                    class="card-img-top"
+                    alt="mind hunter"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-2008-64.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXmG0PwNjF6ic1q0WMz1Zu_MuVx-HMooFRzD7FczSZjNejH94KQL_ICk1jskdq6A5HgG9UvfMMVMY9MLlz7zabBez778OLtve7y07owXtwDlQroNW1sTzn0B_6nGcBJ07WXp_nymhCcedxKuABoxhueQa1EOprUYKmU.webp?r=f13"
+                    class="card-img-top"
+                    alt="bodyguard"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-2008-64.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABXRo5ybSExcx4_fgm7eGPQJ97ao4Wm8ixdBjce8-qXHqbzrFhc1F-mWhNFPl7zT-WmlospL8LtTMxrIHdmHsvhZZXevXoxXYlqE.webp?r=7b9"
+                    class="card-img-top"
+                    alt="Boredertown"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfF9UEarE4WtrgWyNgq9Z1LPUXAKBQ6zZQMPg7JAIbYmz6wQIaDMTXP-RLUxShd-Omrc_Dqhk970W2h-hiIl-q9VCMHT4cM_tyXy1lFCW1UWZFzQ9x6M3IhrlFnUCwHo0q4S.jpg?r=ac3"
+                    class="card-img-top"
+                    alt="Sacred games"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- slider2-end -->
+    <!-- Slider 3 -->
+    <div class="slider-box bg-grays">
+      <section class="container-fluid slider1">
+        <div class="d-flex justify-content-between">
+          <p class="text-white" style="font-family: Notflix medium">
+            <b> Animated Shows </b>
+          </p>
+          <div class="">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators3"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators3"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        </div>
+        <div
+          id="carouselExampleIndicators3"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div
+            class="carousel-inner"
+            style="position: relative; overflow: visible"
+          >
+            <!-- 1st slide -->
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUnVEAbxLTEbzywTDKO50mkaZuhElGikpsfr9mgb0BmjI2qrTd6o41tabn-DSV_T0MSzE-mhVZwA1qdxzV5Gngbga-M-2UN2R78.webp?r=8c2"
+                    class="card-img-top"
+                    alt="Breaking bad"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The •ok• Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQSi926Xfq7iyFofloG2lPV7Zdy7aEA5_lodeNyUX3WgDK-ovJfdznXbxD7FZYyfuQHsQI0js_hiWAVXuI-KK444ghSnhN9H7YGUT-b3QmoDNb5c0kc0_hATdi6bqb1LmgdO.jpg?r=67e"
+                    class="card-img-top"
+                    alt="Peaky blinder"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABf3nZU9OCh5n3K3AvZAy3vZMGSdYoGxdURmWHNBDPDKGEp6kWZELjXolLQKNl4aeW4KzKGEbz7R-ytnk51jzvCI1Z3JYOK30WW4.webp?r=1f0"
+                    class="card-img-top"
+                    alt="Ozark"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY5JVGBp9tnupyX8dbbJVRbUwxEjLy9Hm2L7z0371CaJOcWtQAh7ah7pVZK7LNOVGgeshsgYf5U7w6rEJnVLeTjoEq6WqNX20M8ar0B5HXnPVeKjuCRRu7QwZiDM108K3y2T.jpg?r=7b3"
+                    class="card-img-top"
+                    alt="Narcos"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQXiebToDWdYdxWXmtcrZuOF7L5vNOzeEj9Mn3fBp7pnX-EIMA_FR9dAFERC-hsyPOx6omi5X9FEV7NBPoBPsFSCvGGkBinHYYY.webp?r=a56"
+                    class="card-img-top"
+                    alt="Black list"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-2008-64.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQvkaKzooVeZfJM-O9NPqQyGNOGGjXkuia-6gNxQlvfArBSqH6BnOWhDRnBtGYMyyHd7ZQANB_Amsln3Bc5EuLF1Kdl7wlRNVJA.webp?r=1ae"
+                    class="card-img-top"
+                    alt="money heist"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+            <!-- 2st slide -->
+            <div class="carousel-item">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY7gcPozkplZDx5rNTF94rijBCfSbEt3H-NBn7DRa8mwDYkzqphMESyr_IQ1TaEKtJlR3KEWDl3vvybC3AISgCuvv1qmmQO9NJU.webp?r=93f"
+                    class="card-img-top"
+                    alt="house of card"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • ok • Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSYvQlddFvDW1gfCoL2FHH9Cp0bqJNCiL8vB26N_mwLutbX1uaanbTHFrnTLIdW98sEKiKwQPkNY0TRIcAqigMyrYlgI0FxcPvg.webp?r=677"
+                    class="card-img-top"
+                    alt="Top boy"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc_N9C6UdTUl5mOqmelCuOJPvCiEYEw0bZ7B75whXlitPVgvjg0ZIO5XVa3BWXfBSjqPfsrut2Di9TmId1DQ0zODxFczFrw8jSE.webp?r=7e8"
+                    class="card-img-top"
+                    alt="mind hunter"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSD5xbz4S2StKt0VcVXepwotFgVlpdWQbxQEe4M4rAvY9sNoz4UfT3PIw8fHgjgxFMMQGwEdEENGhFt8BNpElwwTHCKcalyuXLo.webp?r=0b3"
+                    class="card-img-top"
+                    alt="bodyguard"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWY4tH2FRy-3v3uQi_X4smOpOkuxhI4o0-o_m2_huvpg3X4iWgiFjruye_HCNKBKezQok0X-c8Lcz6IFNtEShSbcdzOZ0rlVWrQ.webp?r=78a"
+                    class="card-img-top"
+                    alt="Boredertown"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSkHy7rM-xLKhj1gif1QhYck2lGl-FR9OA4jAQfntjQTfDjSqC0D-RqTDEu9h9WAEJAhQ6E2aQMSwta2t5rct324-_HGi0GU75KySLCDSF8zbhjxi32NToNzyAkusYOjF6Ed.jpg?r=a3a"
+                    class="card-img-top"
+                    alt="Sacred games"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- slider3-end -->
+      <!-- Slider 4 -->
+    <div class="slider-box bg-grays">
+      <section class="container-fluid slider1">
+        <div class="d-flex justify-content-between">
+          <p class="text-white" style="font-family: Notflix medium">
+            <b> Western Shows </b>
+          </p>
+          <div class="">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators4"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators4"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        </div>
+        <div
+          id="carouselExampleIndicators4"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div
+            class="carousel-inner"
+            style="position: relative; overflow: visible"
+          >
+            <!-- 1st slide -->
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR7IruY4nAy8ADtOzwxbyt7DrRqlLLoPfCuEaxdW9fcf_zW0vbFx6OPjf3CyptVzSxbtFvdvhAVmjdZYMq4aGeJOO4PDuSnzx7RKyqW-HHKsa4CSCD1jVasSAtWP3KL9Cyns.jpg?r=e28"
+                    class="card-img-top"
+                    alt="Breaking bad"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • ok • Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQBeQWAQwqiaqbJ3j3_dSmI7ZicqcoOS5L5yuVeSoCW8H3_Xc7U5yDeP4xhpM7exUCr9k0BJPoK-prcd1d2o0ck8Dg8aAN_F3q4.webp?r=658"
+                    class="card-img-top"
+                    alt="Peaky blinder"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS4TlFscToLJMPAOGZM8nsBeuizcAseVm3sUqeyyCmCHmmqgVb910xOFmkF4CFbFg1JMI4h3GDo33P10BJarSnrZU2-saoVVLCQoXVxKo8l84qPGDLHKlsO8_WWmOXDl_Y3Z.jpg?r=5cd"
+                    class="card-img-top"
+                    alt="Ozark"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTjN-wpBbGZOoqFeFEFdkhx7Vlq4JoSv1W6CpH2YNMwUxzolEgEZZhZe88qoy1HFvgmIATzmWeCHBXA26ECi0iaARlUugXTE16A.webp?r=a9a"
+                    class="card-img-top"
+                    alt="Narcos"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUmd_KH6RxSLqyB4u68oBTHZ3GSH59EyHlesRIztvKPtYEWTwXiibob0DBndlPth24qT50XTg1_dbGGfpPdM6Eh5tLXSXAh166g.webp?r=20c"
+                    class="card-img-top"
+                    alt="Black list"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src=https://occ-0-2008-64.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa8PygEsMSO_IAE0fl_qYKpUTQvkKgelHgcMFuQGVilhVljMbAepIEczUnHfCsFZDCATswBXF5y804nrsxuYC6bk1GHfdcRgGM66zWDin-OefMwNqmCiUGeCegVB-SVfziTU.jpg?r=696"
+                    class="card-img-top"
+                    alt="money heist"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+            <!-- 2st slide -->
+            <div class="carousel-item">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWvE1AzyV-0a20CbG15sYeLASrQVL84RmUJYjcGvbKl4i2fRRBgqqyJ4tfZtrg2sqxfY-fpJ1k9qS8Qpgut0uyN4C9WvGYWq5fGmLSiNVP8dIt4AKcGvrT-ow8s5jjuEO1Ey.jpg?r=643"
+                    class="card-img-top"
+                    alt="house of card"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • ok • Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABasdDCyilfFCKcQYaCN53Wze3blmBCWWtp9oXJ8MwyiAerzSIEiLq5OZnEDvk4VM1JCLQlF3DVB0-D-ozreN4WYcqSK1x-LY4j3zLLdu6s0V6nFNujFEhDEa3EP4wA7JlKB-.jpg?r=267"
+                    class="card-img-top"
+                    alt="Top boy"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABThOyZtNNeVsEL0KdVVBUQr-sLJhWLgJthFUYqd7s2kXinnsGg_Oykj3sZ6afRSrRGlyI-HzKPnyzqb-kNHMmtd_rEjXM2j8fzbN6IAfrvrgp8ors2gcfwwFzv8ljCHRiZEQdohhB0nV3HGXPXUDURy0r1m0PXhanBktr9F7ZRdwZr3KjeeHAmkmACI-e9M.jpg?r=eb0"
+                    class="card-img-top"
+                    alt="mind hunter"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSyEv8mauuwk_qjCtr6XqGKkGKYF_Ez-ycG8zgKm6yTzoKmWdcrSz0D26IQmdl9W53VYBCGAtogUKSsyNtm52RP3dVRztaGR2y2MmW0zDs3XlfLVPqqsuV5LPjKqekq7ZQA5.jpg?r=9f6"
+                    class="card-img-top"
+                    alt="bodyguard"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcb01Q0oOCzF-HGmAqNF0PfMcI68I0tpJ-pp5FRlmrZ3WtRjEwoxMPoqf54XLFIeZ24-FTzuCq--SE2NK2Y5xCqimeyY0djEkCU.webp?r=0f6"
+                    class="card-img-top"
+                    alt="Boredertown"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABR307QvrQ2xOlBmri3weYPnF-ROPtbx9URGXu7Y4jCVkma9DDG757RjGpWsHwkFVTJ9Yis05n4cant7qxf7YAEmFeliMBL4c908qBgwpZiK7cuXDb4VR7r16E4Twge-QqBcu.jpg?r=52c"
+                    class="card-img-top"
+                    alt="Sacred games"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- slider4-end -->
+      <!-- Slider 5 -->
+    <div class="slider-box bg-grays">
+      <section class="container-fluid slider1">
+        <div class="d-flex justify-content-between">
+          <p class="text-white" style="font-family: Notflix medium">
+            <b> Award winning movies  </b>
+          </p>
+          <div class="">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators5"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators5"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+        </div>
+        <div
+          id="carouselExampleIndicators5"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div
+            class="carousel-inner"
+            style="position: relative; overflow: visible"
+          >
+            <!-- 1st slide -->
+            <div class="carousel-item active">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbaHMDIhzy37zUMLJi7i1gIdc3j35jcHopNpimAi5kKESOZVVW7_M8YlTBofSV5wiT9ONhedRJlC0cr3FKhdhw1jDhNnnc9abgA.webp?r=6e6"
+                    class="card-img-top"
+                    alt="Breaking bad"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • ok• Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcVmIrQU9s1HbzCGVQ-qYNyVxIc-LnsR-iTNC7n7Q7cQqwxFifXe6wV_NQxYK6bV64UJgWe1sAo0CbClPmdQyyFk5VizTA57UrU.webp?r=dba"
+                    class="card-img-top"
+                    alt="Peaky blinder"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfLfunkvDm5GKryqLHsYHnPJ44f3oz1l_IjqaX1sWWePkx9vP4B8LtJwINeVv1_ty7uO8dzFEu5lS1yWiaKqZKaL9Gb6mfFnA6g.webp?r=b80"
+                    class="card-img-top"
+                    alt="Ozark"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABW5Wynpw0VNL3j0nllo44hEKcwbLKtT3kDLbwk4MDTSk_bSDuAl20ZhXi5ccQYtB6o1SxQexgL7re4N1WTMfOENSrMDMP9p-E1c.webp?r=66a"
+                    class="card-img-top"
+                    alt="Narcos"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeV7gT0SSdQ2vkO9Rau_9GGDApKyg3SH1pPE-sJ_IrB27oGndkGZzkEysE4JCn9Gcr8HtJ26on-4GPbjFqBf4T4AWXEduCqsj5M.webp?r=c5f"
+                    class="card-img-top"
+                    alt="Black list"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWQIWe_OgiZOVdbrnnTHrJvJ68dOXPDSGSnE9K092sB5TmWi0erTTizDvsc55-__QcPwqDjBYUu6TST3hfFdFzfJuj3H0g4C3io.webp?r=6a8"
+                    class="card-img-top"
+                    alt="money heist"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+            <!-- 2st slide -->
+            <div class="carousel-item">
+              <section class="d-flex">
+                <!-- card 1-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRok-0gjbJdW9SIwpDZXHU8igH1n-CmG19VfNuM7NBpjWXT7sNATM-ZBhnTr9gNlH0X9NBBeRwxPLx0ipVIhE_-MSZ0LWUDgVLc.webp?r=5aa"
+                    class="card-img-top"
+                    alt="house of card"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • ok • Show</p>
+                  </div>
+                </div>
+                <!-- card1-end -->
+                <!-- card 2-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWhw56NkHgWP2gKN0y5pR-Q0LBcgcfPK1VQPqeuahqiZLe6ZJ6A62Qt_7YdIBD_qpQb-tnID4MeYS2d0110OG0sJJmBme8_rzm4.webp?r=bd6"
+                    class="card-img-top"
+                    alt="Top boy"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card2-end -->
+                <!-- card 3-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRER5gETn7hi1vyftOJq5SoUgqpCWH3pWXWp41MPVo7YOibjsqtJvH3OUqmd0vsHKX30vkhVDrrVLz3izxi4Q2fbkzPaQ4nLLes.webp?r=351"
+                    class="card-img-top"
+                    alt="mind hunter"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card3-end -->
+                <!-- card 4-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbPgsGbF2XU7G1q5P9OL7wChGR8Gq4rux0vDB_GwjT2m7xVgqs8eDlsK2ZkuK5zhcqa7FCWg10qVsnpAIoDWoU_1lKuC79iX4N8.webp?r=8eb"
+                    class="card-img-top"
+                    alt="bodyguard"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">Phsycho • War • Drama</p>
+                  </div>
+                </div>
+                <!-- card4-end -->
+                <!-- card 5-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABV4Euhjhg8tVsnBCOn8-l9YxIfde7gYFBaDsO6ozR_0wj50QPgueVETZYdh37rxKPsWBAj4DnmXjkUIGcVGrpuCFXaigW8WKMw0.webp?r=f7b"
+                    class="card-img-top"
+                    alt="Boredertown"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card5-end -->
+                <!-- card 6-->
+                <div class="card">
+                  <img
+                    src="https://occ-0-1981-58.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeSo0mMHXip0owooio_xw-9BT4ZKKoXYnA2weK_CkILOFmWS8qvP2ddEfhcgi7EWk7Tv37OXQLIxVr6B_2xv4mK3lqqX0QoExhE.webp?r=bb2"
+                    class="card-img-top"
+                    alt="Sacred games"
+                  />
+                  <div class="card-body">
+                    <section class="d-flex justify-content-between">
+                      <div>
+                        <a href="Error.html"
+                          ><button
+                            type="button"
+                            class=""
+                            style="
+                              background-color: rgba(30, 30, 30, 1);
+                              border: none;
+                              margin-right: 10px;
+                            "
+                          >
+                            <i
+                              class="bi bi-play-circle-fill card-icon"
+                            ></i></button></a
+                        ><i class="bi bi-plus-circle card-icon"></i>
+                      </div>
+                      <div>
+                        <button
+                          type="button"
+                          class=""
+                          style="
+                            background-color: rgba(30, 30, 30, 1);
+                            border: none;
+                          "
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
+                        >
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </button>
+                      </div>
+                    </section>
+                    <p class="m-0 netflix-card-text">The • Best • Show</p>
+                  </div>
+                </div>
+                <!-- card6-end -->
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- slider5-end -->
+    <!-- Footer -->
+    <div class="container-fluid p-0 mt-5">
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: rgba(25, 25, 25, 1)"
+      >
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase p-0">
+                  <a
+                    class="navbar-brand co-red"
+                    href="#"
+                    style="font-family: rye; cursor: default"
+                    >NOTFLIX</a
+                  >
+                </h5>
+
+                <p>
+                  Notflix is replica of netflix and blabalablab lablablabalbla
+                  blab lab lbalb alb laba lbl baalablablab aldbaldbalbdalbdal
+                  abdlabdlabdlabd aldbaldblabda ladblabdlab
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <ul class="list-unstyled mb-0 mt-5">
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Legal Notice</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Privacy</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Cookie Prefrence</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <ul class="list-unstyled mb-0 mt-5">
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Audio description</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Investor Relations</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Help Center</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <ul class="list-unstyled mb-0 mt-5">
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Media Center</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Terms Of Use</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#!"
+                      class="text-white"
+                      style="text-decoration: none"
+                      >Gift Cards</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+          <hr class="mb-4" />
+
+          <!-- Section: Social media -->
+          <section class="mb-4 text-center">
+            <!-- Facebook -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="bi bi-facebook"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="bi bi-twitter"></i
+            ></a>
+
+            <!-- Google -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="bi bi-google"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="bi bi-instagram"></i
+            ></a>
+
+            <!-- Linkedin -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+
+            <!-- Github -->
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="bi bi-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(25, 25, 25, 1)"
+        >
+          ©Abdurrahmanaldjufry
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- footer-end -->
+  </body>
+</html>

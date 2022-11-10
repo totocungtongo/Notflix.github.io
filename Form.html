@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstarp icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- stylesheet1 -->
+    <link href="style.css" rel="stylesheet" />
+    <!-- icon! -->
+    <link
+      rel="icon"
+      href="Picture , Color  and Trailer\Icon.png"
+      type="image/x-icon"
+    />
+    <!-- Rye font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
+      rel="stylesheet"
+    />
+    <!-- js -->
+    <script type="text/javascript" src="Anm.js"></script>
+    <title>Contact us-Notflix</title>
+  </head>
+  <body class="co-white" style="background-color: rgba(30, 30, 30, 1)">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="
+        position: static;
+        position: sticky;
+        background-color: rgba(20, 20, 20, 1);
+      "
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand co-red"
+          href="#"
+          style="font-family: rye; cursor: default"
+          >NOTFLIX</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navts"><i class="bi bi-list"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link co-white"
+                aria-current="page"
+                href="Home.html"
+                style="font-family: Notflix light"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item active co-white">
+              <a
+                class="nav-link"
+                href="Form.html"
+                style="font-family: Notflix light"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+          <div></div>
+          <form class="d-flex" role="search">
+            <div class="input-group">
+              <input
+                class="form-control search-input"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <span class="input-group-text search-btn" id="basic-addon2"
+                ><i class="bi bi-search"></i
+              ></span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Breadcrumbs -->
+    <nav
+      style="
+        --bs-breadcrumb-divider: '>';
+        background-color: rgba(30, 30, 30, 1);
+      "
+      aria-label="breadcrumb"
+      class="navcrumb bg-grays"
+    >
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item">
+          <a
+            href="Home.html"
+            style="
+              font-family: Notflix light;
+              text-decoration: none;
+              color: white;
+            "
+            >Home</a
+          >
+        </li>
+        <li class="breadcrumb-item active">
+          <a
+            style="
+              font-family: Notflix light;
+              text-decoration: none;
+              color: #fff;
+              cursor: default;
+            "
+            >Contact us</a
+          >
+        </li>
+      </ol>
+    </nav>
+    <!-- breadcrumb-end -->
+    <!-- form -->
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 100vh;
+      "
+    >
+      <form class="position-absolute" style="margin-left: 11px">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control form-input"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Email"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control form-input"
+            id="exampleInputPassword1"
+            placeholder="Passowrd"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <label class="form-check-label " for="exampleCheck1"
+            >What is your problem?</label
+          >
+        </div>
+        <div class="flex-rev ">
+          <textarea 
+          class="form-input"
+            placeholder="Tell us what is your problem"
+            name="message"
+            id="message"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-light">Submit</button>
+      </form>
+    </div>
+    <!-- end-form -->
+  </body>
+</html>

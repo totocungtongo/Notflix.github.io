@@ -1,0 +1,142 @@
+@media screen and (max-width: 1200px) {
+  /* big carousel */
+  .btnL {
+    font-size: 15px;
+  }
+  /* breadcrumb */
+  .breadcrumb-item {
+    font-size: 13px;
+  }
+  /* card */
+    .card-icon{
+    font-size: 17px !important;
+  }
+ .card-body{
+  top: 80px;
+ }
+ .netflix-card-text{
+  font-size: 10px;
+  font-family: 'Notflix light';
+}
+}
+
+@media screen and (max-width: 900px) {
+  /* big carousel */
+  .btnL {
+    font-size: 15px;
+  }
+  /* breadcrumb */
+  .breadcrumb-item {
+    font-size: 13px;
+  }
+  /* card */
+  .card-icon{
+    font-size: 17px !important;
+  }
+   .card-body{
+  top: 60px;
+ }
+ .netflix-card-text{
+  font-size: 8px;
+  font-family: 'Notflix light';
+}
+ 
+}
+@media screen and (max-width: 700px) {
+  /* big carousel */
+  .btnL {
+    font-size: 15px;
+  }
+  /* breadcrumb */
+  .breadcrumb-item {
+    font-size: 13px;
+  }
+  /* card */
+  .card-icon{
+    font-size: 17px !important;
+  }
+   .card-body{
+  top: 50px;
+ }
+ .netflix-card-text{
+  font-size: 8px;
+  font-family: 'Notflix light';
+}
+.slider1{
+  display: inline;
+  width: 480px;
+  height: auto;
+}
+}
+@media screen and (max-width: 600px) {
+  /* carousel */
+  .btnL {
+    font-size: 10px;
+  }
+  /* breadcrumb */
+  .breadcrumb-item {
+    font-size: 10px;
+  }
+  /* navbar */
+  .navbar {
+    background-color: black;
+  }
+  .search-flex {
+    width: 50vw;
+  }
+  .search-input::placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-brand {
+    font-size: 20px;
+    margin-left: 3vw;
+  }
+  .nav-link {
+    font-size: 10px;
+    margin-left: 3vw;
+  }
+  .navst {
+    position: static;
+    position: sticky;
+  }
+  /* card*/
+  .card{
+    width: 150px;
+  }
+  .card-icon{
+    font-size: 10px !important;
+  }
+  .card-body{
+    top: 40px;
+  }
+   .netflix-card-text{
+  font-size: 6px;
+  font-family: 'Notflix light';
+}
+/* modals */
+.modals{
+  width: 200px;
+}
+
+}
+@media screen and (max-width: 380px) {
+  .btnL {
+    font-size: 6px;
+  }
+  .search-flex {
+    width: 50%;
+    height: 20%;
+  }
+  .card-icon{
+    font-size: 3px !important;
+  }
+  .card-body{
+    top: 20px;
+  }
+  .netflix-card-text{
+  font-size: 3px;
+  font-family: 'Notflix light';
+}
+}

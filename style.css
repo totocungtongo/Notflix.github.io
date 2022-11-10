@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Notflix bold";
+  src: url(Font/NetflixSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Notflix light";
+  src: url(Font/NetflixSans-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Notflix medium";
+  src: url(Font/NetflixSans-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Notflix reg";
+  src: url(Font/NetflixSans-Regular.ttf) format("truetype");
+}
+/* FONT RYE --> font-family: 'Rye', cursive; */
+.co-red {
+  color: #db0000;
+}
+.co-black {
+  color: black;
+}
+.co-white {
+  color: #ffffff;
+}
+.co-gray {
+  color: #564d4d;
+}
+.co-Dred {
+  color: #831010;
+}
+.bg-grays {
+  background-color: rgba(20, 20, 20, 1);
+}
+/* Carousel */
+.carousel-caption {
+  left: 0;
+  width: 100vw;
+  text-align: left;
+  margin-left: 4vw;
+  margin-bottom: 3vw;
+}
+/* button */
+.btni {
+  opacity: 0.8;
+}
+.btnL {
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.btnL:hover {
+  opacity: 0.5;
+}
+/* navbar */
+.navbar {
+  transition: 1s all ease;
+}
+.navbar.active {
+  transform: translateY(0);
+  background-color: rgba(20, 20, 20, 1);
+  transition: 1s all ease;
+}
+.navbar.nactive {
+  transform: translateY(0);
+  background-image: linear-gradient(
+    rgba(20, 20, 20, 0.6) 20%,
+    rgba(20, 20, 20, 0.5) 30%,
+    rgba(20, 20, 20, 0.04) 50%
+  );
+  border-radius: 1px;
+  transition: 1s all ease;
+}
+.navbar-brand {
+  font-size: 30px;
+  margin-left: 3vw;
+}
+.navbar-brand:hover {
+  color: #db0000;
+}
+.navbar-toggler {
+  border: none;
+  /* width: 5vw;
+  height: 5vw; */
+  text-decoration: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler:hover {
+  text-decoration: none;
+  text-shadow: none;
+}
+.nav-link {
+  font-size: 15px;
+  margin-left: 3vw;
+}
+.search-input {
+  color: #fff;
+  margin-right: none;
+  border-radius: 10px;
+  border: solid 0.5px rgba(255, 255, 255, 1);
+  border-right: none;
+  outline: none;
+  background: rgba(0, 0, 0, 1);
+}
+.search-input::placeholder {
+  font-size: smaller;
+}
+.search-input:focus {
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: solid 0.5px rgba(255, 255, 255, 1);
+  border-right: none;
+  outline: none;
+  background: rgba(0, 0, 0, 1);
+}
+
+.search-btn {
+  color: #ffffff;
+  margin-left: none;
+  border-radius: 10px;
+  border: solid 0.5px rgba(255, 255, 255, 1);
+  border-left: none;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 1);
+}
+.search-flex {
+  width: 20vw;
+  height: 5vh;
+  margin-left: 3vw;
+}
+/* breadcrumb */
+.navcrumb {
+  padding: 0px 12px;
+  margin-bottom: none;
+}
+/* SMOLL CAROUSEL */
+.car-item {
+  margin-left: 4vw;
+}
+/* CARDS */
+.card {
+  width: 250px;
+  background-color: rgba(30, 30, 30, 1);
+  border-radius: 4px;
+  transition: 0.2s linear;
+  margin: 3px;
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.4);
+  z-index: 10;
+}
+.card-body {
+  display: none;
+  padding: 10px 15px;
+  position: absolute;
+  background-color: rgba(30, 30, 30, 1);
+  top: 120px;
+  width: 100%;
+}
+.card:hover > .card-body {
+  display: block;
+}
+.card-icon {
+  color: white;
+  padding: 0px !important;
+  font-size: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.netflix-card-text {
+  font-size: 12px;
+  font-family: "Notflix light";
+}
+/* form */
+.flex-rev textarea {
+  height: 150px;
+  width: fit-content;
+}
+.form-input {
+  color: #fff;
+  margin-right: none;
+  border-radius: 10px;
+  border: solid 0.5px rgba(255, 255, 255, 1);
+  outline: none;
+  background: rgba(0, 0, 0, 1);
+}
+.form-input:focus {
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+  border: solid 0.5px rgba(255, 255, 255, 1);
+  outline: none;
+  background: rgba(0, 0, 0, 1);
+}
+/* Modal */
+.modals {
+  width: 100%;
+}
+
+/* Footer */
+/* error */
+.error-img {
+  width: 1440px;
+  height: auto;
+}
