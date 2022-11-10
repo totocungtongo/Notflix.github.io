@@ -4,6 +4,11 @@ and this poor replica of netflix doesnt 100% work like netflix ,
 im still working on Responsivenese and im only using one modal bcs it needs to much time to make
 all the modal one by one. Thank you for comeby to my mini project!.
 
+Issues in this replica web: 1. when the width of screen below 600 the overflow card broken
+                            2. when the width of screen below 600 i need to have 2 cards i have carousel 
+                     
+                                
+
 Credit:Netflix Pictures
 
 Special thanks to my mentor
