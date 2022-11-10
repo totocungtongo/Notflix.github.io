@@ -205,6 +205,7 @@
 /* Footer */
 /* error */
 .error-img {
-  width: 1440px;
+  width: 100vw;
   height: auto;
 }
+
