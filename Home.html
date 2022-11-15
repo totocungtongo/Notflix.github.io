@@ -37,7 +37,7 @@
       href="https://fonts.googleapis.com/css2?family=Rye&display=swap"
       rel="stylesheet"
     />
-    <!-- js -->
+    <!-- js import -->
     <script type="text/javascript" src="JS.js"></script>
     <title>Home-Notflix</title>
   </head>
@@ -77,19 +77,16 @@
             </button>
           </div>
           <div class="modal-body border-0" style="font-family: Notflix light">
-            <span class="d-flex justify-content-between align-items-center"
-              ><a href="Error.html"
-                ><button type="button" class="btn btn-light">
-                  <span style="font-family: Notflix bold"
-                    ><i class="bi bi-play-fill bi-size"></i> Watch
-                  </span>
-                </button></a
-              >
-              <a href="Error.html"
-                ><i class="bi bi-plus-circle card-icon"></i
-              ></a>
+            <span class="d-flex justify-content-between align-items-center">
+              <button type="button" class="btn btn-light" id="sups">
+                <span style="font-family: Notflix bold"
+                  ><i class="bi bi-play-fill bi-size"></i> Watch
+                </span>
+              </button>
+
+              <button style="background-color:  rgba(20, 20, 20, 1);border: none;" onclick="changeValueName()"><i class="bi bi-plus-circle card-icon"></i></button>
             </span>
-            <h6 class="mt-2">Ozymandias</h6>
+            <h6 class="mt-2" id="sups2">Ozymandias</h6>
             <p>
               Walt goes on the run. Jesse is taken hostage. Marie convinces
               Skyler to tell Walter, Jr. the truth.
@@ -104,12 +101,14 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navst">
       <div class="container-fluid">
-        <a
-          class="navbar-brand co-red"
-          href="#"
-          style="font-family: rye; cursor: default"
-          >NOTFLIX</a
-        >
+        <h1>
+          <a
+            class="navbar-brand co-red"
+            href="#"
+            style="font-family: rye; cursor: default"
+            >NOTFLIX</a
+          >
+        </h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -2077,7 +2076,7 @@
       </section>
     </div>
     <!-- slider3-end -->
-      <!-- Slider 4 -->
+    <!-- Slider 4 -->
     <div class="slider-box bg-grays">
       <section class="container-fluid slider1">
         <div class="d-flex justify-content-between">
@@ -2336,10 +2335,8 @@
                 <!-- card 6-->
                 <div class="card">
                   <img
-                    src=https://occ-0-2008-64.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa8PygEsMSO_IAE0fl_qYKpUTQvkKgelHgcMFuQGVilhVljMbAepIEczUnHfCsFZDCATswBXF5y804nrsxuYC6bk1GHfdcRgGM66zWDin-OefMwNqmCiUGeCegVB-SVfziTU.jpg?r=696"
-                    class="card-img-top"
-                    alt="money heist"
-                  />
+                  src=https://occ-0-2008-64.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABa8PygEsMSO_IAE0fl_qYKpUTQvkKgelHgcMFuQGVilhVljMbAepIEczUnHfCsFZDCATswBXF5y804nrsxuYC6bk1GHfdcRgGM66zWDin-OefMwNqmCiUGeCegVB-SVfziTU.jpg?r=696"
+                  class="card-img-top" alt="money heist" />
                   <div class="card-body">
                     <section class="d-flex justify-content-between">
                       <div>
@@ -2653,12 +2650,12 @@
       </section>
     </div>
     <!-- slider4-end -->
-      <!-- Slider 5 -->
+    <!-- Slider 5 -->
     <div class="slider-box bg-grays">
       <section class="container-fluid slider1">
         <div class="d-flex justify-content-between">
           <p class="text-white" style="font-family: Notflix medium">
-            <b> Award winning movies  </b>
+            <b> Award winning movies </b>
           </p>
           <div class="">
             <button
@@ -3424,5 +3421,27 @@
       <!-- Footer -->
     </div>
     <!-- footer-end -->
+    <!-- Script -->
+    <script type="text/javascript">
+      let elementName = document.getElementById("sups2");
+      document.getElementById("sups").onclick = () => {
+        setTimeout(() => {
+          alert("Sorry this content cant work at this moment");
+        }, 1000);
+      };
+      setTimeout(() => {
+        document.getElementsByTagName("b")[1].innerHTML = "Or Comedy movie";
+      }, 3000);
+      setTimeout(() => {
+        document.getElementsByTagName("b")[1].innerHTML = "Comedy Show";
+      }, 6000);
+      function changeValueName() {
+        if (elementName.innerHTML == "Ozymandias") {
+          elementName.innerHTML = "Felina";
+        } else {
+          elementName.innerHTML = "Ozymandias";
+        }
+      }
+    </script>
   </body>
 </html>

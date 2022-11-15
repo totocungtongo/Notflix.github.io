@@ -1,4 +1,6 @@
+// animation scroll for navbar
 function reveal() {
+  // get document on css class
   var reveals = document.querySelectorAll(".navbar");
   var i = 0;
   for (i; i < reveals.length; i++) {
@@ -12,3 +14,5 @@ function reveal() {
   }
 }
 window.addEventListener("scroll", reveal);
+
+
