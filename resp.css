@@ -18,6 +18,9 @@
     font-size: 10px;
     font-family: "Notflix light";
   }
+  .alert-error{
+  bottom: 88ch;
+}
 }
 
 @media screen and (max-width: 900px) {
@@ -66,6 +69,14 @@
     width: 480px;
     height: auto;
   }
+    .btn-error{
+   width: 640px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    bottom: 200px;
+}
 }
 @media screen and (max-width: 600px) {
   /* carousel */
@@ -118,6 +129,15 @@
   .modals {
     width: 200px;
   }
+    .btn-error{
+   width: 640px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    bottom: 200px;
+    right: 50px;
+}
 }
 @media screen and (max-width: 380px) {
   .btnL {
@@ -134,4 +154,14 @@
     font-size: 3px;
     font-family: "Notflix light";
   }
+     .btn-error{
+   width: 640px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    bottom: 120px;
+    right: 170px;
+}
+  
 }

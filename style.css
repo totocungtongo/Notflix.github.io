@@ -204,5 +204,14 @@
 
 /* Footer */
 /* error */
-
-
+.btn-error{
+   width: 640px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    bottom: 50vh;
+}
+.alert-error{
+  bottom: 108ch;
+}
