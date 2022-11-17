@@ -1,6 +1,7 @@
 HI!
-Welcome to Notflix Before checking the poor replica of netflix make sure your internet is connected
-and this poor replica of netflix doesnt 100% work like netflix ,
+My name is abdurrahman al djufri you can call me aiman.
+Welcome to Notflix Before checking the replica of netflix make sure your internet is connected
+and this  replica of netflix doesnt 100% work like netflix ,
 im still working on Responsivenese and im only using one modal bcs it needs to much time to make
 all the modal one by one. Thank you for comeby to my mini project!.
 
